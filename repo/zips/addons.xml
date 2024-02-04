@@ -1,8 +1,8 @@
-<?xml version='1.0' encoding='utf-8'?>
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
 <addons>
 <addon id="plugin.video.balandro" name="Balandro" version="4.0.01" provider-name="Team Balandro">
   <requires>
-     <import addon="script.module.requests" />
+     <import addon="script.module.requests"/>
   </requires>
 
   <extension point="xbmc.python.pluginsource" library="default.py">
@@ -52,14 +52,15 @@
     <forum>https://www.mimediacenter.info/foro/</forum>
   </extension>
 
-  <extension point="xbmc.service" library="services.py" start="login|startup" />
+  <extension point="xbmc.service" library="services.py" start="login|startup"/>
 </addon>
 
-<addon id="plugin.video.chopocine" version="15" name="[B][COLOR white]chopo[COLOR aqua]cine[/COLOR][/B]" provider-name="equipo tvchopo">
+<addon
+	id="plugin.video.chopocine" version="15" name="[B][COLOR white]chopo[COLOR aqua]cine[/COLOR][/B]" provider-name="equipo tvchopo">
 <requires>
     <import addon="plugin.video.youtube" />
     <import addon="script.module.requests" />
-    <import addon="script.module.resolveurl" optional="true" />
+    <import addon="script.module.resolveurl"  optional="true" />
     <import addon="script.module.six" />
   </requires>
 	<extension point="xbmc.python.pluginsource" library="default.py">
@@ -83,7 +84,7 @@
 		<summary lang="en">choposeries</summary>
 		<summary lang="da">choposeries</summary>
 		<description lang="en">[B][LOWERCASE][CAPITALIZE][COLOR white]addon de cine de la familia tvchopo.....para cualquier consulta o problema  unete  a nuestro grupo de telegram [COLOR yellow]@tvchopo[/COLOR][/CAPITALIZE][/LOWERCASE][/B]</description>
-		<website />
+		<website></website>
 		<license>GPL 2.0</license>
 		<platform>all</platform>
 <assets>
@@ -99,11 +100,12 @@
 	</extension>
 </addon>
 
-<addon id="plugin.video.chopokid" version="02" name="[B][COLOR white]chopo[COLOR lime]kids[/COLOR][/B]" provider-name="equipo tvchopo">
+<addon
+	id="plugin.video.chopokid" version="02" name="[B][COLOR white]chopo[COLOR lime]kids[/COLOR][/B]" provider-name="equipo tvchopo">
 <requires>
     <import addon="plugin.video.youtube" />
     <import addon="script.module.requests" />
-    <import addon="script.module.resolveurl" optional="true" />
+    <import addon="script.module.resolveurl"  optional="true" />
     <import addon="script.module.six" />
   </requires>
 	<extension point="xbmc.python.pluginsource" library="default.py">
@@ -127,7 +129,7 @@
 		<summary lang="en">choposeries</summary>
 		<summary lang="da">choposeries</summary>
 		<description lang="en">[B][LOWERCASE][CAPITALIZE][COLOR white]addon infantil de la familia tvchopo.....para cualquier consulta o problema  unete  a nuestro grupo de telegram [COLOR yellow]@tvchopo[/COLOR][/CAPITALIZE][/LOWERCASE][/B]</description>
-		<website />
+		<website></website>
 		<license>GPL 2.0</license>
 		<platform>all</platform>
 <assets>
@@ -143,11 +145,12 @@
 	</extension>
 </addon>
 
-<addon id="plugin.video.choposeries" version="19" name="[B][COLOR white]chopo[COLOR gold]series[/COLOR][/B]" provider-name="equipo tvchopo">
+<addon
+	id="plugin.video.choposeries" version="19" name="[B][COLOR white]chopo[COLOR gold]series[/COLOR][/B]" provider-name="equipo tvchopo">
 <requires>
     <import addon="plugin.video.youtube" />
     <import addon="script.module.requests" />
-    <import addon="script.module.resolveurl" optional="true" />
+    <import addon="script.module.resolveurl"  optional="true" />
     <import addon="script.module.six" />
   </requires>
 	<extension point="xbmc.python.pluginsource" library="default.py">
@@ -171,7 +174,7 @@
 		<summary lang="en">choposeries</summary>
 		<summary lang="da">choposeries</summary>
 		<description lang="en">[B][LOWERCASE][CAPITALIZE][COLOR white]addon de series de la familia tvchopo para cualquier consulta o problema  unete  a nuestro grupo de telegram [COLOR yellow]@tvchopo[/COLOR][/CAPITALIZE][/LOWERCASE][/B]</description>
-		<website />
+		<website></website>
 		<license>GPL 2.0</license>
 		<platform>all</platform>
 <assets>
@@ -187,6 +190,74 @@
 	</extension>
 </addon>
 
+<addon id="plugin.video.cristalazul" name="[B][/B][COLOR aqua]CRISTAL AZUL 3.0.8[/COLOR]" version="3.0.8" provider-name="PICAPAU, LOURDES, SUPERTOPO, LUISMA, GEORGE">
+    <requires>
+        <import addon="script.module.simplecache"/>
+        <import addon="script.module.six"/>
+        <import addon="script.module.kodi-six"/>
+        <import addon="script.module.requests"/>
+        <import addon="script.module.youtube.dl" optional="true" />
+        <import addon="plugin.video.youtube" />
+		<import addon="plugin.video.duffyou" optional="true" />
+        <import addon="script.module.dateutil" optional="true" />
+        <import addon="script.module.resolveurl" optional="true" />
+        <import addon="script.module.cloudscraper" optional="true" />
+        <import addon="script.module.inputstreamhelper" />
+        <import addon="script.module.pycryptodome" optional="true" />
+    </requires>
+    <extension point="xbmc.python.pluginsource" library="default.py">
+        <provides>video</provides>
+    </extension>
+
+    <extension point="xbmc.service" library="autoexec.py" start="autoexec" />
+
+    <extension point="xbmc.addon.repository" name="Mi repositorio">
+       <dir minversion="18.9.0">
+            <info compressed="false">https://raw.githubusercontent.com/picapaujulen/repositorio/master/Repositorio/addons.xml</info>
+            <checksum>https://raw.githubusercontent.com/picapaujulen/repositorio/master/Repositorio/addons.xml.md5</checksum>
+            <datadir zip="true">https://raw.githubusercontent.com/picapaujulen/repositorio/master/Repositorio/</datadir>
+       </dir>
+    </extension>
+
+
+    <extension point="xbmc.addon.metadata">
+        <summary>creado por picapau, lourdes, supertopo y luisma</summary>
+        <description>ESTE ADDON NO CONTIENE ENLACES PROPIOS,SON RECOPILACIONES DE LA RED, SOLO SE FACILITA EL ACESSO A ESAS WEBS, ESTAS WEBS SON LAS RESPONSABLES DE LOS CONTENIDOS
+        </description>
+		<disclaimer>Este es un software [COLOR red][B]gratuito[/B][/COLOR][CR][COLOR red][B]Pero no se permite[/B][/COLOR] su distribuiciÃ³n preinstalada en ningÃºn tipo de dispositivo ni tampoco su inclusiÃ³n total o parcial en cualquier paquete de software y/o hardware por el que el usuario final deba [COLOR red][B]pagar o hacer una donaciÃ³n[/B][/COLOR], por su adquisiciÃ³n, por su uso o por recibir asistencia.[CR]Si cree que alguna de estas normas no se estÃ¡ cumpliendo pÃ³ngase en contacto con nosotros.</disclaimer>
+        <platform>all</platform>
+        <assets>
+            <icon>icon.gif</icon>
+            <fanart>fanart.jpg</fanart>
+        </assets>
+    </extension>
+</addon>
+
+<addon id="plugin.video.duffyou" name="Duff You" version="0.2.1" provider-name="La Taberna">
+    <requires>
+        <import addon="script.module.six" version="1.11.0" />
+        <import addon="script.module.simplecache" />
+        <import addon="script.module.inputstreamhelper" version="0.5.0" />
+    </requires>
+
+    <extension point="xbmc.python.pluginsource" library="libs/plugin.py">
+        <provides>video</provides>
+    </extension>
+	<extension point="xbmc.python.module" library="libs" />
+    <extension point="xbmc.addon.metadata">
+        <description>Hasta las narices de las apikeys de YouTube? Y de ver como calidad mÃ¡xima los videos de la plataforma solo hasta 720p?[CR]Pues se acabÃ³! Desde nuestra taberna os presentamos un nuevo addon de YouTube, donde no hace falta APIKEY alguna, ni tampoco hay ningÃºn tipo de restricciÃ³n para ver los videos a la mÃ¡xima calidad ofrecida, 720p, 1080p, 2K y 4K![CR]Todo esto y mucho mas...</description>
+        <disclaimer>Este es un software [COLOR red][B]gratuito[/B][/COLOR][CR][COLOR red][B]Pero no se permite[/B][/COLOR] su distribuiciÃ³n preinstalada en ningÃºn tipo de dispositivo ni tampoco su inclusiÃ³n total o parcial en cualquier paquete de software y/o hardware por el que el usuario final deba [COLOR red][B]pagar o hacer una donaciÃ³n[/B][/COLOR], por su adquisiciÃ³n, por su uso o por recibir asistencia.[CR]Si cree que alguna de estas normas no se estÃ¡ cumpliendo pÃ³ngase en contacto con nosotros.</disclaimer>
+        <platform>all</platform>
+        <assets>
+            <icon>icon.jpg</icon>
+            <fanart>fanart.jpg</fanart>
+        </assets>
+        <license>[B]Este es un software gratuito[/B]</license>
+        <news>- AÃ±adida opciÃ³n de reproducciÃ³n externa de playlists[CR]- Correcciones menores
+        </news>
+    </extension>
+</addon>
+
 <addon id="repository.tukan2" name="Tukan2" version="0.0.1" provider-name="Kbestro">
     <extension point="xbmc.addon.repository" name="Tukan2">
         <dir>
@@ -198,11 +269,66 @@
     <extension point="xbmc.addon.metadata">
         <summary>Tukan2</summary>
         <description>DESCRIPTION OF YOUR REPO HERE</description>
-        <disclaimer />
+        <disclaimer></disclaimer>
         <platform>all</platform>
         <assets>
             <icon>icon.png</icon>
             <fanart>fanart.jpg</fanart>
         </assets>
     </extension>
-</addon></addons>
+</addon>
+
+<addon id="skin.ctouch"  version="3.5.1" name="Cristal Touch" provider-name="STVA">
+	<requires>
+		<import addon="resource.language.es_es" version="0.0.0"/>
+	</requires>
+	<extension debugging="false" effectslowdown="1" point="xbmc.gui.skin">
+		<res aspect="16:9" default="true" folder="xml" height="1080" width="1920" />
+	</extension>
+	<extension point="xbmc.addon.metadata">
+		<summary lang="es_ES">Skin para Kodi y Forks. Compatible con Kodi Matrix y Nexus</summary>
+		<summary lang="en_GB">Skin para Kodi y Forks. Compatible con Kodi Matrix y Nexus</summary>
+		<description lang="es_ES">Cristal Touch es un mod del skin AppTV realizado por STVA.[CR]Funciona perfectamente en dispositivos tÃ¡ctiles, pc/portÃ¡til, SmartTV o TV Box y raspberrys o similares[CR]FÃ¡cil personalizaciÃ³n de los items del Inicio desde el menÃº contextual</description>
+		<description lang="en_GB">Cristal Touch es un mod del skin AppTV realizado por STVA.[CR]Funciona perfectamente en dispositivos tÃ¡ctiles, pc/portÃ¡til, SmartTV o TV Box y raspberrys o similares[CR]FÃ¡cil personalizaciÃ³n de los items del Inicio desde el menÃº contextual</description>
+		<disclaimer lang="en_GB">Para dudas, preguntas o sugerencias [CR]Telegram: t.me/stvabuild[CR]Web y Foro: stva.es</disclaimer>
+		<disclaimer lang="es_ES">Para dudas, preguntas o sugerencias [CR]Telegram: t.me/stvabuild[CR]Web y Foro: stva.es</disclaimer>
+		<platform>all</platform>
+		<license></license>
+		<website />
+		<email />
+		<news>VersiÃ³n 3.5.1 - 10/8/23
+- Reparado BotÃ³n 'Buscador Palantir' que provocaba errores
+- AÃ±adidos mensajes de aviso al buscador Palantir y al item deportes
+- Corregidos algunos detalles visuales
+- AÃ±adida al menÃº Apagado la opciÃ³n Reiniciar App para dispositivos Linux
+- Reparado BotÃ³n libreelec de Ajustes para que aparezca tambiÃ©n en corelec y openelec
+
+VersiÃ³n 3.5 - 6/8/23
+- Cambiada Fuente de texto del skin
+- Varios cambios estÃ©ticos en todo el skin
+- Eliminado addon Winner del Skin, ya no funciona
+- Modificado estÃ©tica del primer inicio
+- Eliminado complemento stva del primer inicio
+- AÃ±adidos addons Horus y DuffYou al primer inicio
+- Solucionado error que mostraba la Ãºltima bÃºsqueda al usar el mismo buscador con Palantir
+- Cambiado item Winner por 'lista Tebas' de Deportes Cristal
+- Reparado item 'Repeticiones deportivas'
+- AÃ±adido enlace 'Canales' al item Repeticiones deportivas
+- Ahora el botÃ³n pausa es el foco por defecto
+- El OSD ahora se auto oculta tras 5 segundos de inactividad
+- AÃ±adido a Ajustes de Kodi botÃ³n de Libreelec
+- Cambiada opciÃ³n Log de Ajustes por el visor de log del Complemento STVA
+- Ahora al pulsar hacia la izquierda en el Inicio Widgets se hace focus en los items
+- Otras correcciones menores</news>
+		<assets>
+			<icon>icon.png</icon>
+			<fanart>fanart.jpg</fanart>
+			<screenshot>resources/screenshot001.jpg</screenshot>
+			<screenshot>resources/screenshot002.jpg</screenshot>
+			<screenshot>resources/screenshot003.jpg</screenshot>
+			<screenshot>resources/screenshot004.jpg</screenshot>
+			<screenshot>resources/screenshot005.jpg</screenshot>
+		</assets>
+	</extension>
+</addon>
+</addons>
